@@ -1,4 +1,4 @@
-#include "generic-numpad.dtsi"
+#include "yanumpad.dtsi"
 
 &kscan0 {
     col-gpios

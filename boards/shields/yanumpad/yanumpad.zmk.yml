@@ -1,0 +1,8 @@
+file_format: "1"
+id: yanumpad
+name: yaNumpad
+type: shield
+url: https://github.com/zadavitgovno666/yanumpad
+requires: [pro_micro]
+features:
+  - keys

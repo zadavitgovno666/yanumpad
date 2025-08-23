@@ -1,0 +1,6 @@
+if yanumpad
+
+config ZMK_KEYBOARD_NAME
+    default "yaNumpad"
+
+endif
