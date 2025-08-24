@@ -2,7 +2,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 // ------------------default-----------------
 // | LAYERSFT |    /    |    *    |    -    |
@@ -11,9 +13,9 @@
 // |    1     |    2    |    3    |  ENTER  |
 // |          |    0    |         |    .    |
 // ----------------------------functions-------------------------------
-// |  LAYERSFT  |    NOP             |    NOP    |   Bluetooth PREV   |
-// |    NOP     |    LAYERSFT        |    NOP    |   Bluetooth Next   |
-// |    NOP     |    OUT_TOG         |    NOP    |                    |
+// | RGB toggle |  Brightness Up     |BrightnessD|  Hue Up            |
+// |  Delete    |    LAYERSFT        |DeleteBack |  Hue Down          |
+// |Bluetooth 4 |    OUT_TOG         |Bluetooth 3|                    |
 // |Bluetooth 0 |    Bluetooth 1     |Bluetooth 2|   reset            |
 // |            |    BluetoothCLR    |           |   NOP              |
 // --------------------action layer------------------
