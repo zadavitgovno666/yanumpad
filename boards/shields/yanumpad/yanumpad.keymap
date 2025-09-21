@@ -5,26 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-// ------------------default-----------------
-// | LAYERSFT |    /    |    *    |    -    |
-// |    7     |    8    |    9    |    +    |
-// |    4     |    5    |    6    |         |
-// |    1     |    2    |    3    |  ENTER  |
-// |          |    0    |         |    .    |
-// ----------------------------functions-------------------------------
-// | RGB toggle |  Brightness Up     |BrightnessD|  Hue Up            |
-// |  Delete    |    LAYERSFT        |DeleteBack |  Hue Down          |
-// |Bluetooth 4 |    OUT_TOG         |Bluetooth 3|                    |
-// |Bluetooth 0 |    Bluetooth 1     |Bluetooth 2|   reset            |
-// |            |    BluetoothCLR    |           |   NOP              |
-// --------------------action layer------------------
-// |     NOP   |     NOP   |     NOP   |     NOP    |
-// |     NOP   |     NOP   |     NOP   |            |
-// |Arrow Left |     NOP   |Arrow Right|     NOP    |
-// |     NOP   |     NOP   |     NOP   |     NOP    |
-// |           |     NOP   |           | Bootloader |
-
-&led_strip { chain-length = <21>; };
+&led_strip { chain-length = <20>; };
 
 / {
     keymap {
