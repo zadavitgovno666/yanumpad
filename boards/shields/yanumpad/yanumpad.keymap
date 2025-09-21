@@ -21,23 +21,33 @@
             >;
         };
 
-        function_layer {
+        navigation_layer {
             bindings = <
-&to 2         &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI
-&kp DEL       &rgb_ug RGB_TOG  &kp BSPC         &rgb_ug RGB_HUD
-&bt BT_SEL 4  &out OUT_TOG     &bt BT_SEL 3
-&bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &sys_reset
-              &bt BT_CLR                        &none
+&to 2     &kt KP_NUMLOCK  &kp K_CUT      &kp K_COPY
+&kp HOME  &kp UP          &kp PAGE_UP    &kp K_PASTE
+&kp LEFT  &kp BACKSPACE   &kp RIGHT
+&kp END   &kp DOWN        &kp PAGE_DOWN  &kp KP_ENTER
+          &kp INSERT                     &kp DELETE
+            >;
+        };
+
+        rgb_bt_layer {
+            bindings = <
+&to 3           &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
+&rgb_ug RGB_ON  &rgb_ug RGB_OFF  &bt BT_PRV       &rgb_ug RGB_HUI
+&bt BT_SEL 3    &bt BT_SEL 4     &bt BT_NXT
+&bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &rgb_ug RGB_HUD
+                &bt BT_CLR                        &bt BT_CLR_ALL
             >;
         };
 
         action_layer {
             bindings = <
-&to 0     &none              &none      &none
-&none     &none              &none      &none
-&kp LEFT  &ext_power EP_TOG  &kp RIGHT
-&none     &none              &none      &bootloader
-          &none                         &none
+&to 0             &out OUT_BLE       &out OUT_USB       &out OUT_TOG
+&ext_power EP_ON  &ext_power EP_TOG  &ext_power EP_OFF  &sys_reset
+&bt BT_DISC 3     &bt BT_DISC 4      &none
+&bt BT_DISC 0     &bt BT_DISC 1      &bt BT_DISC 2      &bootloader
+                  &rgb_ug RGB_SAD                       &rgb_ug RGB_SAI
             >;
         };
     };
