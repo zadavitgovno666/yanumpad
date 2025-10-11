@@ -31,6 +31,6 @@
 
 / {
     chosen {
-        zephyr,display = &oled_128x32;
+        zephyr,display = &oled;
     };
 };
