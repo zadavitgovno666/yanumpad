@@ -30,3 +30,9 @@
         prechargep = <0x22>;
     };
 };
+
+/ {
+    chosen {
+        zephyr,display = &oled_128x32;
+    };
+};

@@ -3,6 +3,7 @@ id: yanumpad
 name: yaNumpad
 type: shield
 url: https://github.com/zadavitgovno666/yanumpad
+exposes: [i2c_oled]
 requires: [pro_micro]
 features:
   - keys
