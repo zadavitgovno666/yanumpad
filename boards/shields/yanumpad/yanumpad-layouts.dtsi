@@ -29,3 +29,14 @@
             ;
     };
 };
+
+/ {
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        physical_layout0 {
+            physical-layout = <&physical_layout0>;
+            positions = <>;
+        };
+    };
+};
